@@ -51,8 +51,8 @@ HTML = """<!DOCTYPE html>
 
 @app.route("/")
 def index():
-    import socket, platform, datetime
-       return render_template_string(
+     import socket, platform, datetime
+     return render_template_string(
         HTML,
         python_version=platform.python_version(),
         hostname=socket.gethostname(),
